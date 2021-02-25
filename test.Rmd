@@ -1,0 +1,25 @@
+---
+title: "test"
+author: "Sha Tao"
+date: "2/25/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(plotly)
+```
+
+
+```{r}
+
+fig = plot_ly(alpha = 0.6) %>% 
+  add_histogram(x = ~rnorm(500)) %>% 
+  add_histogram(x = ~rnorm(500) + 1) %>% 
+  layout(barmode = "overlay")
+
+fig
+
+```
+
