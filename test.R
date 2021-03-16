@@ -1,21 +1,10 @@
----
-title: "test"
-author: "Sha Tao"
-date: "2/25/2021"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
-#library(tidyverse, lib = "/ifs/groups/sheaGrp/testPrj/library")
-```
+library(backports, lib = "/ifs/groups/sheaGrp/testPrj/library")
+library(rstudioapi, lib = "/ifs/groups/sheaGrp/testPrj/library")
+library(tidyverse, lib = "/ifs/groups/sheaGrp/testPrj/library")
 
 
-```{r}
-
-# add code to this file
-sdajsfjei
+# library
+#library(tidyverse)
 
 # Create dataset
 data <- data.frame(
@@ -87,8 +76,3 @@ p <- ggplot(data, aes(x=as.factor(id), y=value, fill=group)) +       # Note that
 p
 
 
-```
-
-#rmarkdown::render('C:/Users/st3237/Desktop/test/test_cluster/test.Rmd',  encoding = 'UTF-8');
-#library(rmarkdown, lib = "/ifs/groups/sheaGrp/testPrj/library")
-#render("/ifs/groups/sheaGrp/testPr/test.Rmd",  encoding = "UTF-8")
